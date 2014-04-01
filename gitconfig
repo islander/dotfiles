@@ -1,0 +1,18 @@
+[user]
+    name = kiba
+    email = zombie32@gmail.com
+[core]
+    autocrlf = input
+    safecrlf = true
+    editor = mcedit
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    st = status --short
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+[color]
+    ui = true

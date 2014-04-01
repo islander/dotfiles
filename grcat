@@ -1,0 +1,46 @@
+# grcat - apt-get install grc
+
+# row separators for \G
+regexp=[*]+.+[*]+
+count=stop
+colours=white
+-
+# table borders
+regexp=[+\-|]+
+colours=red
+-
+# default color
+regexp=[\w\.]+
+colours=green
+-
+# text in () and ''
+regexp=\([\w\d,']+\)
+colours=white
+-
+# numbers
+regexp=\s[\d\.]+\s
+colours=yellow
+-
+# name of fields for vertical output with \G
+regexp=\w+:
+colours=white
+-
+# dates Y-m-d H:i:s
+regexp=\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}
+colours=cyan
+-
+# IPs
+regexp=(\d{1,3}\.){3}\d{1,3}(:\d{1,5})?
+colours=cyan
+-
+# MACs
+regexp=([0-9a-f]{2}[:-]){5}([0-9a-f]{2})
+colours=red
+-
+# fields, tables and other system entities in ``
+regexp=`\w+`
+colours=yellow
+-
+# email
+regexp=[\w\.\-_]+@[\w\.\-_]+
+colours=magenta
