@@ -132,7 +132,7 @@ Bundle 'elzr/vim-json'
 
 " distinguished colorscheme
 syntax enable
-colorscheme gruvbox
+silent! colorscheme gruvbox
 set bg=dark		" Setting dark mode
 
 filetype plugin indent on	" required!
