@@ -128,6 +128,7 @@ Bundle 'klen/python-mode'
 Bundle 'morhetz/gruvbox'
 Bundle 'mattn/emmet-vim'
 Bundle 'elzr/vim-json'
+Bundle 'christoomey/vim-tmux-navigator'
 " Bundle 'jszakmeister/vim-togglecursor'
 
 " distinguished colorscheme
