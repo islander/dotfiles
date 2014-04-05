@@ -154,9 +154,9 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " auto-load formated
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
-" enable zen-coding just for html/css
+" enable zen-coding just for html/css/tpl
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,tpl EmmetInstall
 
 " JSON section
 " When you want to format a JSON file type \j
