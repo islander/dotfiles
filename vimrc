@@ -171,3 +171,6 @@ map <leader>js <Esc>:%!echo -en "$(python -c 'import json, sys; print("\n".join(
 " Install https://github.com/elzr/vim-json
 " Put this line in your  ~/.vimrc
 au BufRead,BufNewFile *.json set filetype=json
+
+" enable powerline
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
