@@ -128,8 +128,6 @@ Bundle 'klen/python-mode'
 Bundle 'morhetz/gruvbox'
 Bundle 'mattn/emmet-vim'
 Bundle 'elzr/vim-json'
-Bundle 'bling/vim-airline'
-Bundle 'edkolev/tmuxline.vim'
 Bundle 'christoomey/vim-tmux-navigator'
 " Bundle 'jszakmeister/vim-togglecursor'
 
@@ -174,7 +172,5 @@ map <leader>js <Esc>:%!echo -en "$(python -c 'import json, sys; print("\n".join(
 " Put this line in your  ~/.vimrc
 au BufRead,BufNewFile *.json set filetype=json
 
-" vim-airline font fix
-let g:airline_powerline_fonts = 1
-let g:airline_right_sep=''
-let g:airline#extensions#tmuxline#enabled = 0
+" enable powerline
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
