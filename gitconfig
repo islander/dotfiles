@@ -4,7 +4,7 @@
 [core]
     autocrlf = input
     safecrlf = true
-    editor = mcedit
+    editor = vim
 [alias]
     co = checkout
     ci = commit
