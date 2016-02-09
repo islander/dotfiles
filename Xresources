@@ -10,7 +10,7 @@ URxvt*depth: 32
 ! URxvt*geometry: geom
 
 ! Use the specified colour as the windows background colour [default White]; option -bg.
-URxvt*background: [95]#ffffff
+! URxvt*background: [95]#ffffff
 
 ! Use the specified colour as the windows foreground colour [default Black]; option -fg.
 ! URxvt*foreground: colour
@@ -290,7 +290,7 @@ URxvt*color14: #8ABEB7
 URxvt*color7: #707880
 URxvt*color15: #C5C8C6
 
-# ctrl-left ctrl-right fix
+! ctrl-left ctrl-right fix
 XTerm*vt100.Translations: #override \n\
     Ctrl <KeyPress> Left   : string("\033[90~") \n\
     Ctrl <KeyPress> Right  : string("\033[91~")
