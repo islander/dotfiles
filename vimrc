@@ -129,6 +129,7 @@ Bundle 'morhetz/gruvbox'
 Bundle 'mattn/emmet-vim'
 Bundle 'elzr/vim-json'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Bundle 'jszakmeister/vim-togglecursor'
 
@@ -172,3 +173,9 @@ map <leader>js <Esc>:%!echo -en "$(python -c 'import json, sys; print("\n".join(
 " Install https://github.com/elzr/vim-json
 " Put this line in your  ~/.vimrc
 au BufRead,BufNewFile *.json set filetype=json
+
+" Enable Rainbow Parentesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
