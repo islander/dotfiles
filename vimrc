@@ -112,16 +112,14 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-" original repos on github
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'klen/python-mode'
-Bundle 'morhetz/gruvbox'
-Bundle 'mattn/emmet-vim'
-Bundle 'elzr/vim-json'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'gmarik/vundle'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'klen/python-mode'
+Plugin 'morhetz/gruvbox'
+Plugin 'mattn/emmet-vim'
+Plugin 'elzr/vim-json'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jszakmeister/vim-togglecursor'
 
 " distinguished colorscheme
