@@ -86,6 +86,13 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" http://vim.wikia.com/wiki/VimTip84
+" allow the . to execute once for each line of a visual selection
+vnoremap . :normal .<CR>
+" make ` execute the contents of the a register
+nnoremap ` @a
+vnoremap ` :normal @a<CR>
+
 " show status-line
 set laststatus=2 " 0: never
 		 " 1: only if there are at least two windows
