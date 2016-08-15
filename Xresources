@@ -292,6 +292,14 @@ URxvt*color15: #C5C8C6
 ! powerline font
 URxvt*font: xft:Terminus:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
 
+! disable ISO 14755 mode
+URxvt*iso14755: false
+URxvt.iso14755_52: false
+
+! insert unicode symbols by ctrl+shift+u 221e<CR> ∞
+URxvt*perl-lib: ~/.urxvt-perl
+URxvt*perl-ext: unichr,matcher,-selection
+
 ! ctrl-left ctrl-right fix
 XTerm*vt100.Translations: #override \n\
     Ctrl <KeyPress> Left   : string("\033[90~") \n\
