@@ -121,6 +121,11 @@ Plugin 'elzr/vim-json'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'jszakmeister/vim-togglecursor'
+" clojure plugins
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'tpope/vim-fireplace'
 
 " distinguished colorscheme
 syntax enable
