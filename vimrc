@@ -78,6 +78,13 @@ nmap щ o
 nmap г u
 nmap З P
 
+set wildmenu
+set wcm=<Tab>
+
+" <F4> Open current dir in new tab
+imap <F4> <Esc>Te<CR>
+map <F4> <Esc>Te<CR>
+
 " Copy and paste with system clipboard
 set clipboard=unnamedplus
 
@@ -89,10 +96,21 @@ set wildmode=longest,list
 set wildmenu
 set wcm=<Tab>
 
+" http://vim.wikia.com/wiki/VimTip84
+" allow the . to execute once for each line of a visual selection
+vnoremap . :normal .<CR>
+" make ` execute the contents of the a register
+nnoremap ` @a
+vnoremap ` :normal @a<CR>
+
 " clear hls
 nnoremap <silent> <C-l> :let @/=""<CR>
 
+<<<<<<< HEAD
+" make Y behave like other capitals
+=======
 " make Y behave like other capitals 
+>>>>>>> 8c235206034039612f876efa968be224986ee6e9
 map Y y$
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
@@ -107,8 +125,8 @@ call vundle#rc()
 
 " PLUGINS
 " let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" required!
+Plugin 'gmarik/vundle'
 " original repos on github
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'klen/python-mode'
@@ -139,6 +157,8 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'dgrnbrg/vim-redl'
 Plugin 'raymond-w-ko/vim-niji'
 Plugin 'vim-scripts/paredit.vim'
+" LaTeX plugins
+Plugin 'lervag/vimtex'
 " vue plugins
 Plugin 'posva/vim-vue'
 
@@ -208,6 +228,16 @@ map <leader>js <Esc>:%!echo -en "$(python -c 'import json, sys; print("\n".join(
 " Put this line in your  ~/.vimrc
 au BufRead,BufNewFile *.json set filetype=json
 
+" Enable Rainbow Parentesis
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" vim-repl history
+imap <silent> <C-up> <Plug>clj_repl_uphist.
+imap <silent> <C-down> <Plug>clj_repl_downhist.
+
 " filetype indentation configuration
 set expandtab
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
@@ -250,6 +280,6 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 " Startify
 let g:startify_bookmarks = ['~/.vimrc',]
 " https://habr.com/post/239579/
-let g:startify_custom_header = 
+let g:startify_custom_header =
     \ map(split(system('fortune ~/.vim/fortunes | cowsay -f satanic -W 60'), '\n'), '" ". v:val') + ['','']
 let g:startify_change_to_vcs_root = 1
