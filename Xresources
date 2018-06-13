@@ -290,7 +290,8 @@ URxvt*color14: #8ABEB7
 URxvt*color7: #707880
 URxvt*color15: #C5C8C6
 ! powerline font
-URxvt*font: xft:Terminus:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
+URxvt*font: xft:xos4 Terminus:pixelsize=14,xft:Inconsolata\ for\ Powerline:pixelsize=14
+!URxvt.font:xft:Terminus Re33:size=14:antialias=false:hinting=true:lcdfilter=lcddefault:dpi=96:rgba=rgb!
 
 ! disable ISO 14755 mode
 URxvt*iso14755: false
@@ -304,3 +305,13 @@ URxvt*perl-ext: unichr,matcher,-selection
 XTerm*vt100.Translations: #override \n\
     Ctrl <KeyPress> Left   : string("\033[90~") \n\
     Ctrl <KeyPress> Right  : string("\033[91~")
+
+URxvt.keysym.M-Down:        \033[1;3B
+URxvt.keysym.M-Up:          \033[1;3A
+URxvt.keysym.M-Left:        \033[1;3D
+URxvt.keysym.M-Right:       \033[1;3C
+
+URxvt.keysym.Control-Up:    \033[1;5A
+URxvt.keysym.Control-Down:  \033[1;5B
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C

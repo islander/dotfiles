@@ -68,7 +68,7 @@ set wcm=<Tab>
 "map <F10> :emenu Exit.<Tab>
 
 " <F4> Open current dir in new tab
-imap <F4> <Esc>Te<CR> 
+imap <F4> <Esc>Te<CR>
 map <F4> <Esc>Te<CR>
 
 " show whitespaces
@@ -80,12 +80,6 @@ set history=200
 " Command-Line mode tab auto-complete 'like bash' behavior
 set wildmode=longest,list
 
-" Disable arrows for Normal mode (force myself using 'hjkl'-navigations)
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
 " http://vim.wikia.com/wiki/VimTip84
 " allow the . to execute once for each line of a visual selection
 vnoremap . :normal .<CR>
@@ -94,9 +88,7 @@ nnoremap ` @a
 vnoremap ` :normal @a<CR>
 
 " show status-line
-set laststatus=2 " 0: never
-		 " 1: only if there are at least two windows
-		 " 2: always
+set laststatus=2
 
 " http://vim.wikia.com/wiki/Show_fileencoding_and_bomb_in_the_status_line
 if has("statusline")
@@ -111,7 +103,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Plugin 'gmarik/vundle'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'klen/python-mode'
@@ -126,6 +118,9 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'guns/vim-clojure-highlight'
 Plugin 'tpope/vim-fireplace'
+Plugin 'dgrnbrg/vim-redl'
+" LaTeX plugins
+Plugin 'lervag/vimtex'
 
 " distinguished colorscheme
 syntax enable
@@ -173,3 +168,7 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" vim-repl history
+imap <silent> <C-up> <Plug>clj_repl_uphist.
+imap <silent> <C-down> <Plug>clj_repl_downhist.
