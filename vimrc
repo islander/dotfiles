@@ -106,11 +106,7 @@ vnoremap ` :normal @a<CR>
 " clear hls
 nnoremap <silent> <C-l> :let @/=""<CR>
 
-<<<<<<< HEAD
-" make Y behave like other capitals
-=======
 " make Y behave like other capitals 
->>>>>>> 8c235206034039612f876efa968be224986ee6e9
 map Y y$
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
