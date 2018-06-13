@@ -106,7 +106,7 @@ vnoremap ` :normal @a<CR>
 " clear hls
 nnoremap <silent> <C-l> :let @/=""<CR>
 
-" make Y behave like other capitals 
+" make Y behave like other capitals
 map Y y$
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
@@ -276,6 +276,6 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 " Startify
 let g:startify_bookmarks = ['~/.vimrc',]
 " https://habr.com/post/239579/
-let g:startify_custom_header = 
+let g:startify_custom_header =
     \ map(split(system('fortune ~/.vim/fortunes | cowsay -f satanic -W 60'), '\n'), '" ". v:val') + ['','']
 let g:startify_change_to_vcs_root = 1
