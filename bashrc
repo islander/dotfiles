@@ -1,3 +1,17 @@
+
+## History options
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# don't put duplicate lines in the history. See bash(1) for more options
+# ... or force ignoredups and ignorespace
+HISTCONTROL=ignoredups:ignorespace
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=100000
+HISTFILESIZE=200000
+## EOF History options
+
 # run `echo "source ~/Dropbox/dotfiles/bashrc" >> ~/.bashrc`
 
 # show mysql grants
