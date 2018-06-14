@@ -148,6 +148,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'wikitopian/hardmode'
 "Plugin 'justinmk/vim-sneak'  " lightweith alternative to EasyMotion
 " clojure plugins
+Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'dgrnbrg/vim-redl'
