@@ -37,6 +37,10 @@ if &term =~ '256color'
 endif
 
 " Backup / Swap / Undo config
+let vim_tmp=expand('~/.vim/tmp')
+if !filereadable(vim_tmp)
+  silent !mkdir -p ~/.vim/tmp
+endif
 set backup                      " delete old backup
 set writebackup                 " backup current file
 set directory=~/.vim/tmp        " dir for swap files
