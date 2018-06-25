@@ -117,16 +117,31 @@ map Y y$
 cmap w!! w !sudo tee > /dev/null %
 
 " vundle specific options
-" http://habrahabr.ru/post/148549/
+" START - Setting up Vundle - the vim plugin bundler
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+  echo "Installing Vundle.."
+  echo ""
+  silent !mkdir -p ~/.vim/bundle
+  silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  let iCanHazVundle=0
+endif
 filetype off            " required!
-
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+if iCanHazVundle == 0
+  echo "Installing Bundles, please ignore key map error messages"
+  echo ""
+  :PluginInstall
+endif
+" END - Setting up Vundle - the vim plugin bundler
+" http://habrahabr.ru/post/148549/
+
 " PLUGINS
-" let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
 " original repos on github
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'klen/python-mode'
