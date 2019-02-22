@@ -29,8 +29,13 @@ mygrants() {
 
 # simple console translator powered by Yandex.Translate
 # http://api.yandex.com/translate/doc/dg/reference/translate.xml
-source ~/Dropbox/dotfiles/.yandex_api_key
-en() { wget -qO- "https://translate.yandex.net/api/v1.5/tr.json/translate?key=$YANDEX_TR_API_KEY&lang=en-ru&text=$1"; echo ""; }
+if [ -f ~/.yandex_api_key ]; then
+        source ~/.yandex_api_key
+        en() {
+                TEXT="$@"
+                wget -qO- "https://translate.yandex.net/api/v1.5/tr.json/translate?key=$YANDEX_TR_API_KEY&lang=en-ru&text=${TEXT@Q}" | jq -r '.text | .[]';
+        }
+fi
 
 # mc remember last dir
 # work only in same terminal =(
