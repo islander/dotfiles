@@ -1,3 +1,0 @@
-# change keyboard layout (kbdd)
-"dbus-send --dest=ru.gentoo.KbddService /ru/gentoo/KbddService ru.gentoo.kbdd.prev_layout"
-Mod3
