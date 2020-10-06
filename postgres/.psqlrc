@@ -1,0 +1,8 @@
+\set PROMPT1 '%n@%/%R%# '
+\set PROMPT2 '%n@%/%R%# '
+\x auto
+\pset pager on
+\setenv PAGER 'less -XS'
+\timing on
+\set top5 'SELECT tablename, pg_total_relation_size(schemaname||''.''||tablename) AS bytes FROM pg_tables ORDER BY bytes DESC LIMIT 5;'
+\set ECHO_HIDDEN on

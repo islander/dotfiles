@@ -1,0 +1,30 @@
+$if Bash
+  # F10 toggles mc on and off
+  # Note Ctrl-o toggles panes on and off in mc
+  "\e[21~": "mc -x\C-M"
+
+  # do history expansion when space entered
+  # example:
+  # $ ls -al filename.txt
+  # $ vim !:2<Space>
+  # will expand it to:
+  # $ vim filename.txt
+  Space: magic-space
+$endif
+
+# smart history search with PageUp/PageDown
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+# smart search up/down
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward
+# "\eOA": history-search-backward
+# "\eOB": history-search-forward
+
+set completion-ignore-case on
+
+set enable-bracketed-paste on
+
+# Include system wide settings which are ignored
+# by default if one has their own .inputrc
+$include /etc/inputrc

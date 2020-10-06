@@ -1,0 +1,15 @@
+snippet printf "printf"
+fmt.Printf("%v\n", ${1})
+endsnippet
+
+snippet seed "Random seed"
+rand.Seed(time.Now().UnixNano())
+endsnippet
+
+snippet sleep "Sleep seconds"
+time.Sleep(${1:1} * time.Second)
+endsnippet
+
+snippet mutex "Mutex"
+mu := &sync.Mutex{}
+endsnippet
