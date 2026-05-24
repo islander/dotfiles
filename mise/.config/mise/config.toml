@@ -1,0 +1,8 @@
+[settings]
+disable_default_registry = true
+paranoid = true
+
+[tools]
+tree-sitter = "latest"
+usage = "latest"
+watchexec = "latest"
