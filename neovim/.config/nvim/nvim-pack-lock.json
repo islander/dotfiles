@@ -1,0 +1,42 @@
+{
+  "plugins": {
+    "codecompanion.nvim": {
+      "rev": "558518f8d78a44198cd428f6bf8bf48bfa38d76d",
+      "src": "https://www.github.com/olimorris/codecompanion.nvim",
+      "version": "18.0.0 - 19.0.0"
+    },
+    "gitsigns.nvim": {
+      "rev": "dd3f588bacbeb041be6facf1742e42097f62165d",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
+      "src": "https://github.com/nvim-lualine/lualine.nvim.git"
+    },
+    "mason.nvim": {
+      "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
+      "src": "https://github.com/mason-org/mason.nvim.git"
+    },
+    "mini.icons": {
+      "rev": "520995f1d75da0e4cc901ee95080b1ff2bc46b94",
+      "src": "https://github.com/echasnovski/mini.icons.git"
+    },
+    "nvim-lspconfig": {
+      "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
+      "src": "https://github.com/neovim/nvim-lspconfig.git"
+    },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "version": "'main'"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://www.github.com/nvim-lua/plenary.nvim"
+    },
+    "tokyonight.nvim": {
+      "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
+      "src": "https://github.com/folke/tokyonight.nvim.git"
+    }
+  }
+}
