@@ -13,5 +13,8 @@ require('plugins.lualine')
 require('plugins.miniicons')
 require('plugins.blink')
 
+-- enable autocommands
+require('autocommands')
+
 -- new UI
 require('vim._core.ui2').enable({})
