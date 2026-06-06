@@ -72,7 +72,7 @@ Plug 'fatih/vim-go'
 Plug 'mattn/emmet-vim', { 'for': ['javascript', 'jsx', 'html', 'css'] }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'ternjs/tern_for_vim' , { 'do': 'npm install' }
+"Plug 'ternjs/tern_for_vim' , { 'do': 'npm install' }
 " zen
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -80,7 +80,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'lyokha/vim-xkbswitch'
+"Plug 'lyokha/vim-xkbswitch'
 " snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -90,7 +90,7 @@ Plug 'lervag/vimtex'
 
 call plug#end()
 
-silent! colors Zenburn
+silent! colors PaperColor
 
 " CSS auto-completion M-x M-o
 filetype plugin on
