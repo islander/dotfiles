@@ -3,6 +3,8 @@ disable_default_registry = true
 paranoid = true
 
 [tools]
+"aqua:go-delve/delve" = "latest"
+rust = "latest"
 tree-sitter = "latest"
 usage = "latest"
 watchexec = "latest"
