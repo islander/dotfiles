@@ -186,3 +186,13 @@ taocl() {
 }
 
 export PS1="$([[ ! -z "${UPTERM_ADMIN_SOCKET}"  ]] && echo '(upterm) ')$PS1" # Add an emoji to the prompt if `UPTERM_ADMIN_SOCKET` exists
+
+# neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# deno
+. "$HOME/.deno/env"
+source $HOME/.local/share/bash-completion/completions/deno.bash
+
+# mise
+eval "$(mise activate bash)"
