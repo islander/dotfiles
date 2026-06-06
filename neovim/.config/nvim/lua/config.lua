@@ -1,5 +1,6 @@
 local opt = vim.opt
 
+opt.clipboard = "unnamedplus"  -- integrate with system clipboard
 opt.guicursor = "i:block" -- Use block cursor in insert mode
 opt.colorcolumn = "80" -- Highlight column 80
 opt.signcolumn = "yes:1" -- Always show sign column
@@ -31,3 +32,4 @@ opt.autocomplete = true
 opt.completeopt = { "fuzzy", "menuone", "noselect", "preview" }
 
 vim.cmd.filetype("plugin indent on") -- Enable filetype detection, plugins, and indentation
+

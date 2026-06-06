@@ -11,8 +11,7 @@ require('plugins.nvim-treesitter')
 require('plugins.tokyonight')
 require('plugins.lualine')
 require('plugins.miniicons')
--- require('plugins.plenary')  -- archived
--- require('plugins.codecompanion')  -- not working
+require('plugins.blink')
 
 -- new UI
 require('vim._core.ui2').enable({})
