@@ -7,7 +7,6 @@ vim.pack.add({
 })
 
 local cmp = require('blink.cmp')
-cmp.build():pwait()
 cmp.setup({
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
